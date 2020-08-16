@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL-8</title>
+</head>
+<style>
+  html {
+  scroll-behavior: smooth;
+  }
+    * {
+      font-family: sans-serif;
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    #navbar {
+      overflow: hidden;
+      position: sticky; 
+      top: 0; 
+      width: 98%; 
+      height: 70px; 
+      margin-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+    }
+
+    #navbar ul li {
+      float: left;
+      list-style-type: none;
+    }
+
+    #navbar ul li a {
+      display: block;
+      color: white;
+      padding: 10px 30px;
+      text-decoration: none;
+      margin: 20px;
+    }
+
+
+    #navbar ul li a:hover {
+      background-color: white;
+      color: black; 
+    }
+
+    .banner {
+    background: url('../images/emile-perron-xrVDYZRGdw4-unsplash.jpg');
+    height: 110vh;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    /*.section1   {
+    padding: 1rem;
+    font-size: x-large;
+    text-align: left;
+    color: black;
+
+    }
+    
+    /*.section1 .top-left {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+    font-size: 50px;
+    }*/
+    .team{
+      margin: 15px;
+      margin-top: 40px;
+    }
+    .circle{
+            width: 22%;
+            float: left;
+            display: flex;
+            flex-direction: row;
+            border-radius: 50%;
+            height: 270px;
+            margin: 15px;
+        }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        }
+    .maincontent{
+            width: 45%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            margin: 15px;
+            padding: 15px;
+            background-color: grey;
+            font-size: 25px;
+            color: white;
+            text-align: justify;
+        }
+    .artical {
+            width: 50%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+
+    .box1{
+            background-color: lightgray;
+            width: 23%;
+            display:inline-block;
+            height:475px;
+            font-size: 20px;
+            margin-left: 15px;
+            text-align:justify;
+        }
+     p,h3{padding: 10px;color: white;}
+
+    button {
+        border: none;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 1px 1px;
+        cursor: pointer;
+        width :307px;
+        outline: none;
+        border-radius: 10px;
+        background-color: red;
+    }
+    h2{text-align: center;}
+    .section1::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    
+    .team::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    .section2::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .contact{
+            background-color: palevioletred ;
+            margin: 20px;
+            height: 100px;
+            font-size: 20px;
+            color: black;
+        }
+  </style>
+</style>
+<body>
+  <a id="start"></a>
+  <div id="navbar">
+    <ul>
+        <li><a href="#start">HOME</a></li>
+        <li><a href="#AboutUs">ABOUT US</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#Technologies">TECHNOLOGIES</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <a id="top"></a>
+  <div class="banner">
+    <h1 style = "text-align: left;font-size: 40px;padding-left: 25px;padding-top: 30px;color: white; ">PRACTICAL-8</h1>
+  </div>
+
+<a id="team"></a>
+<br><br><br>
+<div class = "team">
+    <h1>Team Members</h1>
+    <img class="circle" src="../images/1.png">
+    <img class="circle" src="../images/2.png">
+    <img class="circle" src="../images/3.png">
+    <img class="circle" src="../images/9.png">
+ </div>
+ 
+ 
+ <a id="AboutUs"></a>
+ <br><br><br>
+<div class="section2">
+  <h1>About Us</h1>
+  <div class="maincontent">
+    <h3>About Projects</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ex! Reprehenderit eligendi necessitatibus illum, nihil culpa voluptates corrupti optio error delectus quas eveniet, accusantium eaque vel molestias, dicta cumque quo minima. Unde qui, a, delectus sed nam maiores repudiandae libero ipsam ducimus at quam facere reiciendis vel voluptate eaque nisi iure placeat porro quos odio ex odit dolores quae? Placeat iure voluptate fuga totam laborum molestias consequuntur nihil vero optio repudiandae laudantium consectetur odit sapiente eius corrupti exercitationem quod praesentium earum, at eaque quae. Id tempora accusamus ut, sequi deleniti asperiores nulla, suscipit laboriosam quod, voluptatum vitae soluta doloremque voluptas.</p>
+  </div>
+  <div class="artical"><img src="../images/p1.jpg" style="width: 100%; height:200px; display: block; margin-left: auto;margin-right: auto;margin-top: auto;" alt="image not found"></div>
+  <div class="artical"><img src="../images/p2.jpg" style="width: 100%; height:200px; display: block; margin-left: auto;margin-right: auto;margin-top: auto;" alt="image not found"></div>
+  <div class="artical"><img src="../images/p3.jpg" style="width: 100%; height:200px; display: block; margin-left: auto;margin-right: auto;margin-top: auto;" alt="image not found"></div>
+</div>
+
+<a id="Technologies"></a>
+<br><br><br>
+<div class="section3">
+  <h1>Technologies Used</h1>
+    <div class="box1">
+      <img src="../images/HTML.png" style = "width: 100%;">
+      <h2 style="font-size:20px">Introduction to HTML</h2> 
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vel exercitationem rem deleniti optio deserunt cupiditate iusto asperiores suscipit nobis.</p>
+      <a><form><center><button  class="button1" type="submit" formaction="practical-5-HTML.html">Read More</button></center></form></a>
+    </div>
+    <div class="box1">
+        <img src="../images/CSS.png"style = "width: 100%;">
+        <h2  style="font-size:20px" >Introduction to CSS</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vel exercitationem rem deleniti optio deserunt cupiditate iusto asperiores suscipit nobis.</p>
+        <a><form><center><button class="button2"type="submit" formaction="practical-5-CSS.html">Read More</button></center></form></a>
+    </div>
+    <div class="box1">
+        <img src="../images/JS.png" style = "width: 100%;" >
+        <h2 style="font-size:20px">Introduction to JavaScript</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vel exercitationem rem deleniti optio deserunt cupiditate iusto asperiores suscipit nobis.</p>
+        <a><form><center><button class="button3"type="submit" formaction="practical-5-JS.html">Read More</button></center></form></a>
+    </div>
+    <div class="box1">
+        <img src="../images/Bootstrap.jpg" style = "width: 100%;">
+        <h2 style="font-size:20px">Introduction to Bootstrap</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vel exercitationem rem deleniti optio deserunt cupiditate iusto asperiores suscipit nobis.</p>
+        <a><center><form><button class="button4"type="submit" formaction="practical-5-BOOTSTRAP.html">Read More</button></center></form></a>
+    </div>
+  </div>
+
+<a id="Contact"></a>
+<br><br><br>
+  <div class="section4">
+    <h1>Contact</h1>
+    <div class="contact"><center><p>Websites Template for Practical-8<a href="https://www.beta-labs.in/">@ Beta-Labs</a></p></center>  
+    <center><div><a href="#start">Back-to-top</a></div></center></div>
+  </div>
+  </body>
+</html>
