@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Customize table</title>
+    <style>
+        caption{
+            background-color: #34495e;
+            color: white;
+            height: 50px;
+            border:none;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        table{
+            width: 80%;
+            border-collapse:collapse;
+            border: 2px solid #34495e;
+        }
+        table,tr,td,th{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .deliver{
+            color: rgb(30, 168, 30);
+        }
+        .practical{
+            width:480px;
+            text-align: left;
+            height: 30px;
+        }
+        th{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(141, 135, 135);
+        }
+        tr{
+            border-bottom:2px solid rgb(219, 218, 218)
+        }
+        tbody>tr:hover{
+            background-color: rgb(233, 230, 230);
+        }
+        #edit , #delete{
+            color: grey;
+        }
+        #edit:hover{
+            color:blue;
+        }
+        #delete:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <center><caption>
+            Online Practical Book
+        </caption></center>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th class="practical" >Practical Name</th>
+                <th>link</th>
+                <th>Status</th>
+                <th>Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td class="practical" >Create a Web page including HTML basic skeleton using Offline HTML Editor and Onlinr Sandbox Environment</td>
+            <td><a href="practical-1.html">Practical-1</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit" title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete"  title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="practical">Live your First Web-page on Git-Hub</td>
+            <td><a href="practical-2.html">Practical-2</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit" title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete" title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="practical"> Create a web page showing a basic html structure using character Entities and span Tag</td>
+            <td><a href="practical-3.html">Practical-3</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit" title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete" title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="practical">Create a website having list of all practical and their individual practical Page links</td>
+            <td><a href="practical-4.html">Practical-4</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit"  title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete" title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="practical">Create a web-page showing the use of image-Map in the Web Application </td>
+            <td><a href="practical-5.html">Practical-5</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit"  title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete" title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td class="practical">Create following layout using CSS layout properties</td>
+            <td><a href="practical-6.html">Practical-6</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i  id = "edit" title="Edit" class ="material-icons button edit"> edit </i>
+                <i id = "delete"  title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="practical">Create a Web Page Layout using div tags</td>
+            <td><a href="practical-7.html">Practical-7</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit"  title="Edit" class ="material-icons button edit"> edit </i>
+                <i id = "delete"  title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td class="practical">Create a Web Page having Fixed Navigation Bar with the given content</td>
+            <td><a href="practical-8.html">Practical-8</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit"  title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete" title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td class="practical">Create a Responsive Web Layout with Responsive Navigation Bar</td>
+            <td><a href="practical-9.html">Practical-9</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i id = "edit"  title="Edit" class ="material-icons button edit"> edit </i>
+                <i  id = "delete" title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+        <tr style="border-bottom:2px solid #34495e">
+            <td>10</td>
+            <td class="practical">Create a Responsive Side-Bar Navigation Menu</td>
+            <td><a href="practical-10.html">Practical-10</a></td>
+            <td class = "deliver">Checked</td>
+            <td>
+                <i  id = "edit" title="Edit" class ="material-icons button edit"> edit </i>
+                <i id = "delete"  title="Delete" class ="material-icons button delete"> delete </i>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
