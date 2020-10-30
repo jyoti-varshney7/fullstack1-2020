@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        button{
+            text-decoration: none;
+            background-color: #64548f;
+            padding: 15px 45px;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 40px;
+            display: inline;
+            vertical-align: middle;
+            outline: none;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        body{
+            background-color: gainsboro;
+            margin: 20px;
+        }
+        .counter-display{
+            display: inline;
+            margin: 20px;
+        }
+        .counter-minus{
+            margin-left: 530px;
+        }
+    </style>
+</head>
+<body>
+    <h1>counter</h1>
+    <button class="counter-minus">-</button>
+    <h1 class="counter-display">(..)</h1>
+    <button class="counter-plus">+</button>
+    <script>
+        var counterDisplayElem = document.querySelector('.counter-display');
+        var counterMinusElem = document.querySelector('.counter-minus');
+        var counterPlusElem = document.querySelector('.counter-plus');
+        var count = 0
+        updateDisplay();
+
+counterPlusElem.addEventListener("click",()=>{
+    count++;
+    if(count > 0){
+        counterMinusElem.disabled= false;
+        counterMinusElem.style.background = "#64548f";
+    }
+    updateDisplay();
+});
+counterMinusElem.addEventListener("click",()=>{
+    if(count <= 0){
+        counterMinusElem.disabled= true;
+        counterMinusElem.style.background = "red";
+    }
+    else{
+        counterMinusElem.disabled= false;
+        counterMinusElem.style.background = "#64548f";
+        count--;
+    }
+    updateDisplay();
+});
+
+function updateDisplay(){
+    counterDisplayElem.innerHTML = count;
+};
+    </script>
+</body>
+</html>
