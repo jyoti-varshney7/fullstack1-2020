@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslateblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #fff;
+    width: 28rem;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.header{
+    background-color: #f7f7f7;
+}
+.header h2{
+    padding: 15px;
+    text-align: center;
+}
+.form{
+    padding: 20px 30px;
+}
+.form-control{
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.form-control label{
+    display: block;
+    padding: 5px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    outline: none;
+}
+.form-control input:focus{
+    border: 2px solid darkslateblue;
+}
+.form-control i{
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    visibility: hidden;
+    color: red;
+}
+.form button{
+    display: block;
+    width: 100%;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.form .fa-check-circle{
+    color: green;
+}
+.form .fa-exclamation{
+    color: red;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+
+.success .fa-check-circle{
+    visibility: visible;
+}
+.error .fa-exclamation, .error small{
+    visibility: visible;
+}
