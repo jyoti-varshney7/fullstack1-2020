@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valid form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/practical-18.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username">
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation"></i>
+          <small>Username not valid</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="Enter email">
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation"></i>
+        <small>Email not valid</small>
+    </div>
+    <div class="form-control">
+      <label for="password1">Password</label>
+      <input type="password" id="password1" placeholder="Enter password">
+      <i class="fa fa-check-circle"></i>
+      <i class="fa fa-exclamation"></i>
+      <small>Password cannot be blank</small>
+  </div>
+  <div class="form-control">
+    <label for="password2">Confirm Password</label>
+    <input type="password" id="password2" placeholder="Enter password">
+    <i class="fa fa-check-circle"></i>
+    <i class="fa fa-exclamation"></i>
+    <small>Password cannot be blank</small>
+  </div>
+  <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="../CSS/practical-18.js"></script>
+</body>
+</html>
