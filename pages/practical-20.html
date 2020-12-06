@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .content {
+        min-height: 200px;
+        background-color: gray;
+        text-align: center;
+        margin-top: 10px;
+      }
+      #content1 {
+        background-color: red;
+      }
+      #content2 {
+        background-color: green;
+        min-height: 410px;
+      }
+      #content3 {
+        background-color: yellow;
+      }
+      #content4 {
+        background-color: blue;
+      }
+      #content5 {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content" id="content1"></div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="content" id="content2"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="col">
+            <div class="content" id="content3"></div>
+          </div>
+          <div class="col">
+            <div class="content" id="content4"></div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="content" id="content5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
